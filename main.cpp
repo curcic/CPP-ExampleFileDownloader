@@ -44,7 +44,7 @@ void head_print() {
 	system("CLS");
 	CONSOLE_SCREEN_BUFFER_INFO CON_SCR_BUF_INF;
 	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &CON_SCR_BUF_INF);
-	for (int i = 0; i < (((CON_SCR_BUF_INF.srWindow.Right - CON_SCR_BUF_INF.srWindow.Left + 1) - strlen("C++ File Downloader")) / 2); i++) {
+	for (int i = 0; i < (((CON_SCR_BUF_INF.srWindow.Right - CON_SCR_BUF_INF.srWindow.Left + 1) - strlen(menu_title)) / 2); i++) {
 		std::cout << " ";
 	}
 	std::cout << "C++ File Downloader" << std::endl;
